@@ -1,0 +1,87 @@
+{%- assign social = site.lin.social_links -%}
+
+<span>
+  {%- if social.twitter -%}
+  <a href="https://twitter.com/{{ social.twitter | cgi_escape | escape }}" rel="nofollow" target="_blank">
+    <span>Twitter</span> 
+  </a> |
+  {%- endif -%}
+
+  {%- if social.linkedin -%}
+  <a href="https://www.linkedin.com/in/{{ social.linkedin | cgi_escape | escape }}" rel="nofollow" target="_blank">
+    <span>Linkedin</span>
+  </a> |
+  {%- endif -%}
+
+  {%- if social.youtube_user -%}
+  <a href="https://www.youtube.com/user/{{ social.youtube_user | cgi_escape | escape }}" rel="nofollow" target="_blank">
+    <span> Youtube User </span>
+  </a> |
+  {%- endif -%}
+
+  {%- if social.youtube_channel -%}
+  <a href="https://www.youtube.com/c/{{ social.youtube_channel | cgi_escape | escape }}" rel="nofollow" target="_blank">
+    <span>Youtube Channel</span>
+  </a> |
+  {%- endif -%}
+
+  {%- if social.dribbble -%}
+  <a href="https://dribbble.com/{{ social.dribbble | cgi_escape | escape }}" rel="nofollow" target="_blank">
+    <span>Dribbble</span>
+  </a> |
+  {%- endif -%}
+
+  {%- if social.facebook -%}
+  <a href="https://www.facebook.com/{{ social.facebook | cgi_escape | escape }}" rel="nofollow" target="_blank">
+    <span>Facebook</span>
+  </a> |
+  {%- endif -%}
+
+  {%- if social.github -%}
+  <a href="https://github.com/{{ social.github | cgi_escape | escape }}" rel="nofollow" target="_blank">
+    <span>Github</span>
+  </a> |
+  {%- endif -%}
+
+  {%- if social.medium -%}
+  <a href="https://medium.com/@{{ social.github | cgi_escape | escape }}" rel="nofollow" target="_blank"> 
+    <span>Medium</span>
+  </a> |
+  {%- endif -%}
+
+  {%- if social.instagram -%}
+  <a href="https://www.instagram.com/{{ social.instagram | cgi_escape | escape }}" rel="nofollow" target="_blank">
+    <span>Instagram</span>
+  </a> |
+  {%- endif -%}
+
+  {%- if social.flickr -%}
+  <a href="https://www.flickr.com/photos/{{ social.flickr | cgi_escape | escape }}" rel="nofollow" target="_blank">
+    <span>Flickr</span>
+  </a> |
+  {%- endif -%}
+
+  {%- if social.pinterest -%}
+  <a href="https://www.pinterest.com/{{ social.pinterest | cgi_escape | escape }}" rel="nofollow" target="_blank">
+    <span>Pinterest</span>
+  </a> |
+  {%- endif -%}
+
+  {%- if social.telegram -%}
+  <a href="https://t.me/{{ social.telegram | cgi_escape | escape }}" rel="nofollow" target="_blank">
+    <span>Telegram</span>
+  </a> |
+  {%- endif -%}
+
+  {%- if social.keybase -%}
+  <a href="https://keybase.io/{{ social.keybase | cgi_escape | escape }}" rel="nofollow" target="_blank">
+    <span>keybase</span>
+  </a> |
+  {%- endif -%}
+
+  {%- if social.rss -%}
+  <a href="{{ 'feed.xml' | relative_url }}" rel="nofollow" target="_blank">
+    <span>Feed</span>
+  </a> 
+  {%- endif -%}
+</span>

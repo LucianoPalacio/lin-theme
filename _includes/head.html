@@ -1,0 +1,27 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/png" href="/assets/favicon.png" sizes="32x32">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ 'assets/css/main.css' | relative_url }}">
+
+  <title>
+    {% if page.layout == "home" %}
+        {{ site.title }} | {{ site.description }}
+    {% else %}
+        {{ page.title }} | {{ site.title }}
+    {% endif %}
+  </title>  
+
+  <meta name="author" content="Test Author">
+
+  <meta property="og:locale" content="en_US">
+  
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+
+  <meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+
+  <meta property="og:site_name" content="Your awesome title">
+
+  {%- feed_meta -%}
+</head>

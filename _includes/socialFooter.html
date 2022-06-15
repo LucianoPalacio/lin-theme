@@ -1,0 +1,33 @@
+{%- assign social = site.lin.social_links -%}
+
+<span>
+  {%- if social.twitter -%}
+  <a href="https://twitter.com/{{ social.twitter | cgi_escape | escape }}" rel="nofollow" target="_blank">
+    <span>Twitter</span> 
+  </a> |
+  {%- endif -%}
+
+  {%- if social.linkedin -%}
+  <a href="https://www.linkedin.com/in/{{ social.linkedin | cgi_escape | escape }}" rel="nofollow" target="_blank">
+    <span>Linkedin</span>
+  </a> |
+  {%- endif -%}
+
+  {%- if social.facebook -%}
+  <a href="https://www.facebook.com/{{ social.facebook | cgi_escape | escape }}" rel="nofollow" target="_blank">
+    <span>Facebook</span>
+  </a> |
+  {%- endif -%}
+
+  {%- if social.github -%}
+  <a href="https://github.com/{{ social.github | cgi_escape | escape }}" rel="nofollow" target="_blank">
+    <span>Github</span>
+  </a> |
+  {%- endif -%}
+
+  {%- if social.rss -%}
+  <a href="{{ 'feed.xml' | relative_url }}" rel="nofollow" target="_blank">
+    <span>Feed</span>
+  </a> 
+  {%- endif -%}
+</span>
